@@ -1,0 +1,10 @@
+language:
+  - go
+go:
+  - "1.11.x"
+before_script:
+  - docker build -t credit_go .
+  - go get -v github.com/franela/goblin
+script:
+  - go build application.go
+  - go test ./... -cover -v
