@@ -1,0 +1,1 @@
+This folder uses for repositories interfaces, implementation and tests

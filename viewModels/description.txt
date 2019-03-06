@@ -1,0 +1,1 @@
+This folder uses for view models interfaces, implementation and tests
