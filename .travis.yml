@@ -3,7 +3,6 @@ language:
 go:
   - "1.11.x"
 before_script:
-  - apt
   - go get -v github.com/gin-gonic/gin
 script:
   - go build application.go
