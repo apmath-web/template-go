@@ -1,25 +1,26 @@
-#Template-go
+# Template-go
 Template for go web-service.
 
 It contains a simple web server with hello world handler.
 
-##Install dependencies:
+## Install dependencies:
 go get -v github.com/gin-gonic/gin
 
-##Build
+## Build
 go build application.go
 
-##Tests
+## Tests
 go test ./... -cover -v
 
-##Run
+## Run
 ./application
 
-##Test
+## Test
 curl http://127.0.0.1:8080/v1/hello_world
+
 {"message":"Hello world"}
 
-##About structure
+## About structure
 - actions
   - folder for handlers implementation and tests
 - routing
