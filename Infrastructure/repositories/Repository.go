@@ -5,16 +5,16 @@ import (
 )
 
 type Repository struct {
-	models         map[int]Domain.HelloWorldApplicatiomModel
+	models         map[int]Domain.HelloWorldApplicationModel
 	numberOfModels int
 }
 
 func GenRepository() *Repository {
-	repo := &Repository{make(map[int]Domain.HelloWorldApplicatiomModel), 0}
+	repo := &Repository{make(map[int]Domain.HelloWorldApplicationModel), 0}
 	return repo
 }
 
-func (r *Repository) GetModel(id int) Domain.HelloWorldApplicatiomModel {
+func (r *Repository) GetModel(id int) Domain.HelloWorldApplicationModel {
 	helloWorld, ok := r.models[id]
 	if ok {
 		return helloWorld
@@ -22,7 +22,7 @@ func (r *Repository) GetModel(id int) Domain.HelloWorldApplicatiomModel {
 	return nil
 }
 
-func (r *Repository) PutModel(model Domain.HelloWorldApplicatiomModel) int {
+func (r *Repository) PutModel(model Domain.HelloWorldApplicationModel) int {
 	r.numberOfModels++
 	r.models[r.numberOfModels] = model
 	return r.numberOfModels
