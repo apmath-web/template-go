@@ -27,3 +27,5 @@ func (r *Repository) PutModel(model Domain.HelloWorldApplicatiomModel) int {
 	r.models[r.numberOfModels] = model
 	return r.numberOfModels
 }
+
+var Repo = GenRepository()
