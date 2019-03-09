@@ -14,7 +14,7 @@ func (hw *HelloWorld) SetMessage(message string) {
 	hw.Message = message
 }
 
-func GenHelloWorldApplicationModel(message string) Domain.HelloWorldApplicatiomModel {
+func GenHelloWorldApplicationModel(message string) Domain.HelloWorldApplicationModel {
 	hw := new(HelloWorld)
 	hw.SetMessage(message)
 	return hw
