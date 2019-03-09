@@ -17,6 +17,7 @@ func HelloWorldHandler(c *gin.Context) {
 	hw := repositories.Repo.GetModel(id)
 	if hw == nil {
 		c.JSON(http.StatusNotFound, viewModels.GenHelloWorldViewModel("No model", "404"))
+		return
 	}
 	helloWorldViewModel := viewModels.GenHelloWorldViewModel(hw.GetMessage(), "200")
 	c.JSON(http.StatusOK, helloWorldViewModel)
