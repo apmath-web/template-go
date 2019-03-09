@@ -11,9 +11,13 @@ import (
 func HelloWorldHandler(c *gin.Context) {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
-		c.JSON(http.StatusBadRequest, viewModels.GenHelloWorldViewModel("wrong id", "400"))
+		c.JSON(http.StatusBadRequest, viewModels.GenHelloWorldViewModel("Wrong id", "400"))
+		return
 	}
 	hw := repositories.Repo.GetModel(id)
+	if hw == nil {
+		c.JSON(http.StatusNotFound, viewModels.GenHelloWorldViewModel("No model", "404"))
+	}
 	helloWorldViewModel := viewModels.GenHelloWorldViewModel(hw.GetMessage(), "200")
-	c.JSON(200, helloWorldViewModel)
+	c.JSON(http.StatusOK, helloWorldViewModel)
 }
