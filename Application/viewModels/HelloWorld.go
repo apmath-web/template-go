@@ -21,7 +21,7 @@ func (hw *HelloWorld) SetStatus(status string) {
 	hw.Status = status
 }
 
-func GenHelloWorld(message string, status string) *HelloWorld {
+func GenHelloWorldViewModel(message string, status string) *HelloWorld {
 	hw := new(HelloWorld)
 	hw.SetStatus(status)
 	hw.SetMessage(message)
