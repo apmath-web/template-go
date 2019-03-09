@@ -16,7 +16,7 @@ go test ./... -cover -v
 ./application
 
 ## Test
-curl http://127.0.0.1:8080/v1/hello_world
+curl http://127.0.0.1:8080/v1/hello_world/1
 
 {"message":"Hello world"}
 
