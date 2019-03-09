@@ -1,6 +1,6 @@
 package Domain
 
-type HelloWorldApplicatiomModel interface {
+type HelloWorldApplicationModel interface {
 	GetMessage() string
 	SetMessage(message string)
 }
