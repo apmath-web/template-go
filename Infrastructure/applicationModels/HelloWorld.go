@@ -8,6 +8,6 @@ func (hw *HelloWorld) GetMessage() string {
 	return hw.Message
 }
 
-func (hw *HelloWorld) SetMessage(message string) string {
+func (hw *HelloWorld) SetMessage(message string) {
 	hw.Message = message
 }
