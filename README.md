@@ -20,17 +20,20 @@ curl http://127.0.0.1:8080/v1/hello_world
 {"message":"Hello world"}
 
 ##About structure
-- actions
-  - folder for handlers implementation and tests
-- routing
-  - folder for router settings
-- view models
-  - folder for view models interfaces, implementation and tests
-- value objects
-  - folder for value objects interfaces, implementation and tests
-- models
-  - folder for models interfaces, implementation and tests
-- actions
-  - folder for repositories interfaces, implementation and tests
+- Application
+  - actions
+    - Contain handlers implementation and tests
+  - routing
+    - Contain router settings
+  - view models
+    - Contain view models implementation and tests
+- Domain
+  - Contain interfaces of viewModels, applicationModels, repositories
+  - Contain business logic of service
+- Infrastructure
+  - applicationModels
+    - Contain models implementation and tests
+  - repositories
+    - Contain repositories implementation and tests
 - application
   - main package for Application

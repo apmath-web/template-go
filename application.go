@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/apmath-web/template-go/routing"
+	"github.com/apmath-web/template-go/Application/routing"
 	"log"
 )
 

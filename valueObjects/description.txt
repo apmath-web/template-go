@@ -1,1 +1,0 @@
-This folder uses for value objects interfaces, implementation and tests

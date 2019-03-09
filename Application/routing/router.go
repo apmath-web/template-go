@@ -1,7 +1,7 @@
 package routing
 
 import (
-	"github.com/apmath-web/template-go/actions"
+	"github.com/apmath-web/template-go/Application/actions"
 	"github.com/gin-gonic/gin"
 )
 

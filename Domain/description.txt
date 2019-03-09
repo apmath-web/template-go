@@ -1,0 +1,2 @@
+Contains interfaces of Infrastructure/applicationModels, Infrastructure/repositories, Application/viewModels
+and Business logic of this service.
