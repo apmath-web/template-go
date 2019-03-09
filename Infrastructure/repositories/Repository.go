@@ -22,7 +22,7 @@ func (r *Repository) GetModel(id int) Domain.HelloWorldApplicatiomModel {
 	return nil
 }
 
-func (r *Repository) SetModel(model Domain.HelloWorldApplicatiomModel) int {
+func (r *Repository) PutModel(model Domain.HelloWorldApplicatiomModel) int {
 	r.numberOfModels++
 	r.models[r.numberOfModels] = model
 	return r.numberOfModels
