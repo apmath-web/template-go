@@ -24,7 +24,7 @@ curl http://127.0.0.1:8080/v1/hello_world/1
 ### SetUp
 Для корректной развертки приложения и дальнейшей разработки необходимо клонировать его в по следующему пути
 `.../go/src/github.com/apmath-web/`
-Клонировать: `git clone https://github.com/apmath-web/clients`
+Клонировать: `git clone https://github.com/apmath-web/template-go`
 ### Running
 Для запуска необходимо запустить билд `application.go`
 `go build application.go`
